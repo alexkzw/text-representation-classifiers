@@ -47,6 +47,7 @@ For the second variant, a deeper CNN with 3 Conv1D layers were tested without LS
 
 For the third variant, a multi-kernel tuning was tested without LSTM. The 3 different kernel sizes were used to help capture different n-gram features. This increased the model’s complexity but didn’t improve the test accuracy. Instead, it has the lowest test accuracy of 79.8%
 
+## Conclusion
 Overall, while various enhancements such as Bidirectional LSTM, dropout, and multikernel CNNs were explored, none of the tuned models substantially outperformed the simpler CNN + GloVe baseline. The best-performing variant - Deep CNN with GloVe - achieved a test accuracy of 88.5%, slightly below the baseline of 90.6%. This suggests that increased model complexity yielded diminishing returns. 
 
 In summary, pre-trained embeddings like GloVe proved highly effective in capturing generalisable semantic information. Moreover, model tuning does not always lead to improved performance. The marginal drop in accuracy observed in some variants may be attributed to overfitting or over-regularisation introduced during tuning.
